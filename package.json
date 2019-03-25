@@ -1,48 +1,49 @@
 {
-  "name": "win-ca",
-  "version": "2.4.1",
+  "name": "vscode-windows-ca-certs",
+  "version": "0.1.0",
   "description": "Get Windows System Root certificates",
-  "main": "lib",
+  "os": [
+    "win32"
+  ],
+  "gypfile": true,
+  "main": "build/Release/crypt32",
   "files": [
-    "lib",
-    "fallback"
+    "binding.gyp",
+    "crypt32.cc"
   ],
   "scripts": {
-    "nvm$": "n-api\\nvm$deploy",
-    "pretest": "coffee build",
-    "postinstall": "node -e \"try{require('.')}catch(e){}\"",
-    "test": "coffee test"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ukoloff@github.com/ukoloff/win-ca.git"
+    "url": "git+https://github.com/Microsoft/vscode-windows-ca-certs.git"
   },
   "keywords": [
-    "n-api",
     "ssl",
     "tls",
     "ca",
     "root",
-    "windows",
-    "vscode",
-    "electron"
+    "windows"
   ],
-  "author": {
-    "name": "Stas Ukolov",
-    "email": "ukoloff@gmail.com"
-  },
+  "contributors": [
+    {
+      "name": "Stas Ukolov",
+      "email": "ukoloff@gmail.com"
+    },
+    {
+      "name": "Microsoft Corporation"
+    }
+  ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ukoloff/win-ca/issues"
+    "url": "https://github.com/Microsoft/vscode-windows-ca-certs/issues"
   },
-  "homepage": "https://github.com/ukoloff/win-ca",
+  "homepage": "https://github.com/Microsoft/vscode-windows-ca-certs",
   "dependencies": {
-    "is-electron": "^2.2.0",
-    "make-dir": "^1.3.0",
-    "node-forge": "^0.7.5",
-    "split": "^1.0.1"
+    "node-addon-api": "1.6.2"
   },
   "devDependencies": {
-    "coffee-script": "^1.12.2"
+    "bindings": "1.5.0",
+    "node-forge": "0.8.2"
   }
 }

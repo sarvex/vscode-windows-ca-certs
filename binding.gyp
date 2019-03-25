@@ -20,16 +20,6 @@
       "link_settings": {
         "libraries": ["-lcrypt32"]
       }
-    },
-    {
-      "target_name": "roots",
-      "type": "executable",
-      "sources": [
-        "roots.c"
-      ],
-      "link_settings": {
-        "libraries": ["-lcrypt32"]
-      }
     }
   ]
 }
