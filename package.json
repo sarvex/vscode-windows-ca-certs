@@ -1,5 +1,5 @@
 {
-  "name": "vscode-windows-ca-certs",
+  "name": "@vscode/windows-ca-certs",
   "version": "0.3.1",
   "description": "Get Windows System Root certificates",
   "os": [
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Microsoft/vscode-windows-ca-certs.git"
+    "url": "git+https://github.com/microsoft/vscode-windows-ca-certs.git"
   },
   "keywords": [
     "ssl",
@@ -36,9 +36,9 @@
   ],
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/Microsoft/vscode-windows-ca-certs/issues"
+    "url": "https://github.com/microsoft/vscode-windows-ca-certs/issues"
   },
-  "homepage": "https://github.com/Microsoft/vscode-windows-ca-certs",
+  "homepage": "https://github.com/microsoft/vscode-windows-ca-certs",
   "dependencies": {
     "node-addon-api": "^3.0.2"
   },
